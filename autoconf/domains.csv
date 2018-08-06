@@ -75,6 +75,7 @@ gmx.eu,imap.gmx.net,993,mail.gmx.net,587
 gmx.info,imap.gmx.net,993,mail.gmx.net,587
 gmx.net,imap.gmx.net,993,mail.gmx.net,587
 gmx.org,imap.gmx.net,993,mail.gmx.net,587
+gmx.us,imap.gmx.net,993,mail.gmx.net,587
 goat.si,mail.cock.li,993,mail.cock.li,587
 googlemail.com,imap.googlemail.com,993,smtp.googlemail.com,587
 grrlz.net,mail.autistici.org,993,smtp.autistici.org,465
