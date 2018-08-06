@@ -26,6 +26,9 @@ auto_view application/pdf
 alternative_order text/plain text/enriched text/html
 set rfc2047_parameters = yes
 
+# Crypto
+source cryptorc
+
 # General remappings
 bind editor <space> noop
 bind index G last-entry
