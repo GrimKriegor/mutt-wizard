@@ -11,6 +11,7 @@ set certificate_file = ~/.config/mutt/accounts/$title/certificates
 source "~/.config/mutt/credentials/getmuttpass $title |"
 
 alias me $realname <$fulladdr>
+set signature = ~/.config/mutt/accounts/$title/signature
 
 set mbox_type = Maildir
 set ssl_starttls = yes
