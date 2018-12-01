@@ -44,8 +44,13 @@ bind index U undelete-message
 bind index F search
 bind index,pager R group-reply
 macro index,pager S '<sync-mailbox><shell-escape>pkill -RTMIN+12 i3blocks<enter>'
-macro index,pager \Cu |urlview\n
-macro index,pager ,, |urlview\n
+macro index,pager ,, "\
+:set my_tmp_pipe_decode=\$pipe_decode\n\
+:set pipe_decode\n\
+|urlview\n\
+:set pipe_decode=\$my_tmp_pipe_decode\n\
+:unset my_tmp_pipe_decode\n" \
+'call urlview to extract URLs out of a message'
 
 # View attachments properly.
 bind attach <return> view-mailcap
